@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Nikola Gj">
+        <meta name="description" content="Simple flask calculator">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Python, Calculator">
+        <title>Flask Calculator</title>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <div class="container">
+            <div class="header">Calculator</div>
+            <input type="text" class="result" id='result' name='result' readonly disabled>
+            <div class="first-row">
+            </div>
+            <div class="second-row">
+            <input type="button" name="" value="7" onclick="Add(7)" class="global">
+            <input type="button" name="" value="8" onclick="Add(8)" class="global">
+            <input type="button" name="" value="9" onclick="Add(9)" class="global">
+            <input type="button" name="" value="/" onclick="Add('/')" class="global">
+            </div>
+            <div class="third-row">
+            <input type="button" name="" value="4" onclick="Add(4)" class="global">
+            <input type="button" name="" value="5" onclick="Add(5)" class="global">
+            <input type="button" name="" value="6" onclick="Add(6)" class="global">
+            <input type="button" name="" value="X" onclick="Add('*')" class="global">
+            </div>
+            <div class="fourth-row">
+            <input type="button" name="" value="1" onclick="Add(1)" class="global">
+            <input type="button" name="" value="2" onclick="Add(2)" class="global">
+            <input type="button" name="" value="3" onclick="Add(3)" class="global">
+            <input type="button" name="" value="-" onclick="Add('-')" class="global">
+            </div>
+            <div class="conflict">
+            <div class="left">
+                <input type="button" name="" value="0" onclick="Add(0)" class=" big">
+                <input type="button" name="" value="." onclick="Add('.')" class=" small">
+                <input type="button" name="" value="Del" onclick='DeleteOne()' class=" red small white-text top-margin">
+                <input type="button" name="" value="=" onclick="Calculate()" class=" green white-text big top-margin">
+            </div>
+            <div class="right">
+                <input type="button" name="" value="+" onclick="Add('+')" class="global grey plus">
+            </div>
+            <input type="button" name="" value="Clear All" onclick='Clear()' class=" red small white-text top-margin" style='width: 100%;'>
+            <br>
+            </div>
+        </div>
+        <script src="/static/script.js"></script>
+    </body>
+</html>
