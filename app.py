@@ -13,9 +13,9 @@ def calculator():
 @app.route("/calculate/")
 @app.route("/calculate/<path:data>")
 def calculate(data=''):
-  try:
-    if data == '':
+  if data == '':
       return ""
+  try:
     answer = eval(data)
     return str(answer)
   except:
